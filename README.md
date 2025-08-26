@@ -2,13 +2,13 @@
 
 Generated from Figma file: **Test Company Brand Guide**
 
-Last updated: 2025-08-26T21:11:01.194Z
+Last updated: 2025-08-26T21:14:40.157Z
 
 ## Color Palette
 
 | Color | Variable | HEX | Usage |
 |-------|----------|-----|-------|
-| Brand/100 | `--color-brand-100` | `#f5f5f5` | Primary brand color |
+| Brand/100 | `--color-brand-100` | `#df2020` | Primary brand color |
 | Brand/200 | `--color-brand-200` | `#e6e6e6` | Primary brand color |
 | Brand/300 | `--color-brand-300` | `#d9d9d9` | Primary brand color |
 | Brand/400 | `--color-brand-400` | `#b3b3b3` | Primary brand color |
