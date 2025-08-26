@@ -1,73 +1,34 @@
-# Brand Guide Builder
+# Brand Guide
 
-A Figma-to-GitHub system that automatically updates repositories with brand colors and documentation extracted from Figma variables.
+Generated from Figma file: **Test Company Brand Guide**
 
-## Overview
+Last updated: 2025-08-26T20:56:29.163Z
 
-This system allows designers to run a Figma plugin that automatically:
+## Color Palette
 
-- Extracts brand colors from Figma variables
-- Updates a GitHub repository with brand guides via a user-friendly UI
-- Updates CSS files with the latest colors
-- Generates documentation and visual guides
+| Color | Variable | HEX | Usage |
+|-------|----------|-----|-------|
+| Brand/100 | `--color-brand-100` | `#f5f5f5` | Primary brand color |
+| Brand/200 | `--color-brand-200` | `#e6e6e6` | Primary brand color |
+| Brand/300 | `--color-brand-300` | `#d9d9d9` | Primary brand color |
+| Brand/400 | `--color-brand-400` | `#b3b3b3` | Primary brand color |
+| Brand/500 | `--color-brand-500` | `#757575` | Primary brand color |
+| Brand/600 | `--color-brand-600` | `#444444` | Primary brand color |
+| Brand/700 | `--color-brand-700` | `#383838` | Primary brand color |
+| Brand/800 | `--color-brand-800` | `#2c2c2c` | Primary brand color |
+| Brand/900 | `--color-brand-900` | `#1e1e1e` | Primary brand color |
+| Brand/1000 | `--color-brand-1000` | `#111111` | Primary brand color |
 
-## Quick Start
+## Usage
 
-1. **Install dependencies:**
-
-   ```bash
-   npm install
-   ```
-
-2. **Set up environment variables** in `.env.local`:
-
-   ```bash
-   GITHUB_TOKEN=your_github_personal_access_token_here
-   ```
-
-3. **Start the development server:**
-
-   ```bash
-   npm run dev
-   ```
-
-4. **Test the webhook** at `http://localhost:3000/api/webhook`
-
-5. **Use the Figma plugin** to input repository details and generate brand guides
-
-## How It Works
-
-1. **Figma Plugin UI**: Users input GitHub repository information directly in the plugin
-2. **Color Extraction**: Plugin extracts brand colors from Figma variables
-3. **Webhook Processing**: Data is sent to the webhook with repository details
-4. **Repository Update**: System updates the specified GitHub repository with brand guide files
-
-## Figma Plugin Features
-
-- **User-friendly UI** for entering GitHub repository details
-- **Repository validation** and error handling
-- **Settings persistence** using localStorage
-- **Real-time status updates** during processing
-- **Multiple webhook endpoint options** (local, Vercel, Netlify)
-
-## Generated Files
-
-- `styles/colors.css` - CSS variables for all brand colors
-- `README.md` - Color palette documentation
-- `index.html` - Visual brand guide
-- `package.json` - Basic setup for serving the brand guide
-
-## Environment Variables
-
-| Variable       | Required | Description                       |
-| -------------- | -------- | --------------------------------- |
-| `GITHUB_TOKEN` | Yes      | Your GitHub personal access token |
+```css
+/* Use CSS variables */
+.my-element {
+  background-color: var(--color-brand-100);
+  color: var(--color-brand-900);
+}
+```
 
 ## Development
 
-This is a [Next.js](https://nextjs.org) project. The main webhook endpoint is at `/api/webhook` and handles Figma data to update GitHub repositories.
-
-## Learn More
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [GitHub API Documentation](https://docs.github.com/en/rest)
+This brand guide is automatically generated from Figma variables.
